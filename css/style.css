@@ -91,6 +91,7 @@ nav ul a:hover{
 .navbar.fixed{
     background: #000;
     color: #fff;
+    padding: 0;
 }
 
 .navbar-light .navbar-nav .nav-link{
