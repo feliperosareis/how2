@@ -81,10 +81,16 @@ nav ul a:hover{
 }
 
 .navbar{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 20;
+    transition: ease all .8s;
+}
+.navbar.fixed{
+    background: #000;
+    color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -107,13 +113,23 @@ nav ul a:hover{
     background: rgba(255, 255, 255, .1);
     transition: all ease .3s;
 }
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+    border-bottom: solid;
+}
 
 .ctn-banner-title{
-    position: absolute;
-    top: 100px;
-    color: #fff;
+    margin-top: 30px;
+    color: #000;
     left: 0;
     right: 0;
+}
+.ctn-banner-title h1{
+    font-size: 22px;
+}
+.ctn-banner-title h2{
+    font-size: 18px;
 }
 
 input[type="text"], textarea {
@@ -122,9 +138,72 @@ input[type="text"], textarea {
     border:1px solid #ccc !important;
 }
 
-.form-control{
-    background: #f1f1f1;
+.owl-nav{
+    font-size: 50px;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    color: #308057;
+}
+.owl-nav .owl-prev{
+    position: absolute;
+    left: -30px;
+}
+.owl-nav .owl-next{
+    position: absolute;
+    right: -30px;
+}
 
+.owl-dots{
+    text-align: center;
+}
+.owl-carousel button.owl-dot{
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    margin: 3px;
+    border-radius: 10px;
+}
+.owl-carousel button.owl-dot.active{
+    background: #308057;
+}
+
+.list-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list-skills li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social{
+    font-size: 20px;
+}
+
+.go-top{
+    font-size: 30px;
+    color: #308057;
+    background: #ddd;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    border-radius: 50px;
+    padding: 10px 20px 15px 20px;
+    z-index: 10;
+    opacity: .6;
+    display: none;
+}
+.go-top:hover{
+    opacity: 1;
+    color: #308057;
+}
+
+.whats{
+    font-size: 26px;
+    color: #308057;
 }
 
 @media screen and (min-width: 1024px) {
@@ -132,5 +211,16 @@ input[type="text"], textarea {
         top: 0;
         width: initial;
         background: none;
+    }
+    .ctn-banner-title{
+        position: absolute;
+        top: 100px;
+        color: #fff;
+    }
+    .ctn-banner-title h1{
+        font-size: 30px;
+    }
+    .ctn-banner-title h2{
+        font-size: 22px;
     }
 }

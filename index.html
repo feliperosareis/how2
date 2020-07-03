@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' href='img/favicon.ico'/>
     <title>Portifólio</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
    
@@ -25,13 +27,27 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav px-3">
                             <li class="nav-item pl-lg-5 active">
-                                <a class="nav-link" href="#">SOBRE MIM<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#sobremim">SOBRE MIM<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item pl-lg-5">
-                                <a class="nav-link" href="#">PORTIFÓLIO</a>
+                                <a class="nav-link" href="#portifolio">PORTIFÓLIO</a>
                             </li>
                             <li class="nav-item pl-lg-5">
-                                <a class="nav-link" href="#">CONTATO</a>
+                                <a class="nav-link" href="#skills">SKILLS</a>
+                            </li>
+                            <li class="nav-item pl-lg-5">
+                                <a class="nav-link" href="#contato">CONTATO</a>
+                            </li>
+                            <li class="nav-item social pl-lg-5 pt-2">
+                                <a href="https://facebook.com/feliperosareis" target="_blank" class="ml-2">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="https://instagram.com/feliperosareis" target="_blank" class="ml-2">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/feliperosareis/" target="_blank" class="ml-2">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -42,7 +58,7 @@
 
             <div class="container ctn-banner-title">
                 <div class="row">
-                    <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                    <div class="col-12 col-lg-10 offset-lg-1 text-center">
                         <h1>Procurando mais visibilidade para o seu negócio?!</h1>
                         <h2 class="text-center">Entre em contato e vamos conversar</h2>
                     </div>
@@ -50,17 +66,17 @@
             </div>
         </section>
         
-        <section class="presentation py-5">
+        <section class="presentation py-5" id="sobremim">
             <div class="container">
                 <div class="row">
                     <div class="col-12 mb-4 mt-3">
                         <h2 class="text-center text-uppercase mb-4"><i class="fa fa-coffee color-green"></i> sobre Mim</h2>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4 text-center mb-3">
                         <img src="http://placebeard.it/g/250x250" alt="Sobre min" class="img-fluid rounded-circle box-shadow">
                     </div>
                     <div class="col-12 col-lg-8 pt-3">
-                        <h5 class="text-uppercase">Subtítulo aqui</h5>
+                        <h5 class="text-uppercase">Foi assim que tudo começou...</h5>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quo tempore, ea molestiae cum corrupti? Modi eaque architecto iure, error ducimus minus illo nobis ab veniam. Ab, hic consequuntur.
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum quo tempore, ea molestiae cum corrupti? Modi eaque architecto iure, error ducimus minus illo nobis ab veniam. Ab, hic consequuntur.
@@ -70,15 +86,15 @@
             </div>
         </section>
 
-        <section class="bg-gray py-5">
+        <section class="bg-gray py-5" id="portifolio">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <h2 class="text-center text-uppercase"><i class="fa fa-magic color-green"></i> portifólio</h2>
                         <h5 class="text-uppercase text-center mb-5">Veja alguns trabalhos que realizei</h5>
 
-                        <ul class="jobs row"> 
-                            <li class="col-12 col-lg-4 mb-4">
+                        <ul class="jobs owl-carousel owl-theme"> 
+                            <li class=" mb-4">
                                 <div class="box-shadow bg-white pb-2">
                                     <a href="https://itatiaiaseminovos.com.br" target="_blank">
                                         <img src="img/Screenshot_1.jpg" alt="Itatiaia Seminovos" class="img-fluid">
@@ -92,7 +108,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="col-12 col-lg-4 mb-4">
+                            <li class=" mb-4">
                                 <div class="box-shadow bg-white pb-2">
                                     <a href="https://www.zanimultimarcas.com.br" target="_blank">
                                         <img src="img/Screenshot_2.jpg" alt="Zani Multimarcas" class="img-fluid">
@@ -106,7 +122,21 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="col-12 col-lg-4 mb-4">
+                            <li class=" mb-4">
+                                <div class="box-shadow bg-white pb-2">
+                                    <a href="https://azzurrajeep.com.br" target="_blank">
+                                        <img src="img/Screenshot_3.jpg" alt="Azzurra Jeep" class="img-fluid">
+                                    </a>
+                                    <div class="ctn-content p-3 border-top">
+                                        <p class="font-weight-bold mb-1">Azzurra Jeep</p>
+                                        <p class="font-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur ipsam quisquam! Voluptatem quae amet praesentium blanditiis quas quasi beatae id eveniet, dolorum ex ea magnam delectus fuga voluptatum vero!</p>
+                                        <a href="https://azzurrajeep.com.br" target="_blank">
+                                            <button class="btn btn-default d-block mx-auto px-4 mt-3 font-14"><i class="fa fa-eye"></i> Espiar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>  
+                            <li class=" mb-4">
                                 <div class="box-shadow bg-white pb-2">
                                     <a href="https://azzurrajeep.com.br" target="_blank">
                                         <img src="img/Screenshot_3.jpg" alt="Azzurra Jeep" class="img-fluid">
@@ -126,27 +156,67 @@
             </div>
         </section>
 
-        <section class="py-5">
+
+        <section class="py-5" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-5">
+                        <h2 class="text-center text-uppercase"><i class="fa fa-check-square-o color-green"></i> Skills</h2>
+                        <p class="text-center mb-3">Algumas tecnologias que trabalhei e tenho conhecimento.</p>
+                    </div>
+
+                    <ul class="list-skills row d-flex px-3">
+                        <li class="col-4 col-lg-3 mb-3">
+                            <img src="https://logodownload.org/wp-content/uploads/2016/10/php-logo.png" alt="PHP" class="img-fluid align-items-center">
+                        </li>
+                        <li class="col-4 col-lg-3 mb-3">
+                            <img src="https://static.scriptcaser.com/uploads/2019/09/mysql-696x430.jpg" alt="Mysql" class="img-fluid align-items-center">
+                        </li>
+                        <li class="col-4 col-lg-3 mb-3">
+                            <img src="https://www.nssoftware.pt/wp-content/uploads/laravel.png" alt="Laravel" class="img-fluid align-items-center">
+                        </li>
+                        <li class="col-4 col-lg-3 mb-3">
+                            <img src="https://xorandre.github.io/AndreRodrigues/assets/img/icons/codeIgniter.png" alt="Codeigniter" class="img-fluid align-items-center">
+                        </li>
+                        <li class="col-4 col-lg-3 mb-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexrA5_UPODh6vzzk6Mek5ra06g0kNKIUroe4Mvk9VjoYZHb4&s" alt="jQuery" class="img-fluid align-items-center">
+                        </li>
+                        <li class="col-4 col-lg-3 mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="Html5" class="img-fluid align-items-center">
+                        </li>
+                        <li class="col-4 col-lg-3 mb-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTldn2nAEtSwichYumTjzNmYccMb7nSzE-Cub2SFKgwpgvysgoj&s" alt="CSS3" class="img-fluid align-items-center">
+                        </li>
+                        <li class="col-4 col-lg-3 mb-3">
+                            <img src="https://www.eewee.fr/wp-content/uploads/2015/06/git.jpg" alt="Git" class="img-fluid align-items-center">
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray py-5" id="contato">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-8 offset-lg-2">
-                        <h2 class="text-center text-uppercase"><i class="fa fa-phone color-green"></i> Contato</h2>
+                        <h2 class="text-center text-uppercase"><i class="fa fa-commenting color-green"></i> Contato</h2>
                         <p class="text-center mb-3">Preencha o formulário abaixo que entrarei em contato.</p>
                         <form action="">
                             <div class="row">
-                                <div class="col-12 col-lg-6 mb-2 pr-1">
+                                <div class="col-12 col-lg-6 mb-2 pr-lg-1">
                                     <input type="text" name="nome" placeholder="Nome" class='form-control'>
                                 </div>
                                                             
-                                <div class="col-12 col-lg-6 mb-2 pl-1">
+                                <div class="col-12 col-lg-6 mb-2 pl-lg-1">
                                     <input type="text" name="email" placeholder="E-mail" class='form-control'>
                                 </div>
 
-                                <div class="col-12 col-lg-6 mb-2 pr-1">
+                                <div class="col-12 col-lg-6 mb-2 pr-lg-1">
                                     <input type="text" name="celular" placeholder="Celular" class='form-control'>
                                 </div>
 
-                                <div class="col-12 col-lg-6 mb-2 pl-1">
+                                <div class="col-12 col-lg-6 mb-2 pl-lg-1">
                                     <input type="text" name="telefone" placeholder="Telefone" class='form-control'>
                                 </div>
 
@@ -154,7 +224,15 @@
                                     <textarea name="mensagem" class="form-control" rows="5"></textarea>
                                 </div>
 
-                                <div class="col-12 col-lg-3 offset-lg-9 mt-3">
+                                <div class="col-12 col-lg-5">
+                                    <a href="https://api.whatsapp.com/send?phone=5547991482768&text=Ol%C3%A1!%20Podemos%20conversar%3F" target="_blank">
+                                        <p class="font-weight-bold mt-4 whats">
+                                            <i class="fa fa-whatsapp"></i> (47) 99148-2768
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-12 col-lg-3 offset-lg-4 mt-3">
                                     <button class="btn btn-default d-block w-100">Enviar</button>
                                 </div>
                             </div>
@@ -163,6 +241,11 @@
                 </div>
             </div>
         </section>
+
+
+        <a href="javascript:void(0)" class="go-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
 
         <footer>
             <div class="copyright py-2">
@@ -179,6 +262,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
